@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'Gerstner-Regular';
-  src: url("./src/Gerstner-font/Gerstner-Programm-Regular.woff") format('woff');
+  src: url("./src/assets/fonts/Gerstner-font/Gerstner-Programm-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gerstner-Light';
-  src: url("./src/Gerstner-font/Gerstner-Programm-Light.woff") format('woff');
+  src: url("./src/assets/fonts/Gerstner-font/Gerstner-Programm-Light.woff") format('woff');
   font-weight: light;
   font-style: normal;
 }
 
 html {
-  font-family: 'Gerstner-Regular';
+  font-family: 'Gerstner-Regular', 'PT Sans';
   margin: 0;
   padding: 0;
   overflow-x: hidden;
