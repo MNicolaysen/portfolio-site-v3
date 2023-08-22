@@ -50,12 +50,18 @@ function ProjectItem({
     window.open(link, "_blank");
   };
 
-// speed up project video x2
   useEffect(() => {
     if (videoRef.current) {
         videoRef.current.playbackRate = 2.0;
     }
   }, [videoRef]);
+
+  const links = [linkOne, linkTwo, linkThree];
+  const icons = [
+    "fa-solid fa-arrow-up-right-from-square",
+    "fa-brands fa-github",
+    "fa-brands fa-youtube"
+  ];
 
   return (
     <div className="project" ref={projectRef} id={title.replace(/ /g, "-")}>
@@ -73,30 +79,17 @@ function ProjectItem({
       <div className='project-description-group'>
         <p className="project-description">{description}</p>
         <ul className="project-links">
-            {linkOne && (
-              <button
-                className={"card-button"}
-                onClick={() => handleButtonClick(linkOne)}
-              >
-                <i className="fa-solid fa-arrow-up-right-from-square"></i>
-              </button>
-            )}
-            {linkTwo && (
-              <button
-                className={"card-button"}
-                onClick={() => handleButtonClick(linkTwo)}
-              >
-                <i className="fa-brands fa-github"></i>
-              </button>
-            )}
-            {linkThree && (
-              <button
-                className={"card-button"}
-                onClick={() => handleButtonClick(linkThree)}
-              >
-                <i className="fa-brands fa-youtube"></i>
-              </button>
-            )}
+            {links.map((link, idx) => (
+              link && (
+                <button
+                  key={idx}
+                  className={"card-button"}
+                  onClick={() => handleButtonClick(link)}
+                >
+                  <i className={icons[idx]}></i>
+                </button>
+              )
+            ))}
         </ul>
       </div>
       <div className='sub-description-group'>
