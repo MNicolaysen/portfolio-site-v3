@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { projectsData } from "./projectsData";
-import "./project.css"
+import "./Project.css"
 
 function ProjectItem({
   title,
