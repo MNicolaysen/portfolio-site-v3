@@ -7,7 +7,7 @@ export const projectsData = [
     linkOne:'https://morton-nicolaysen.com/',
     linkTwo:'https://github.com/MNicolaysen/portfolio-site-v2',
     linkThree:'',
-    videoSrc:'./src/components/images/projects/portfolio-v2-vid.mp4'
+    videoSrc:'../components/images/projects/portfolio-v2-vid.mp4'
   },
   {
     title:'Meme Generator',
