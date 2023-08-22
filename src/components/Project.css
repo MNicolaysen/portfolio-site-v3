@@ -1,12 +1,89 @@
 .project {
-  justify-content: flex-end;
-  width: 50%;
-  /* z-index: 1;
-  position: relative; */
+  z-index: 10;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.project:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .project-item {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.project-header {
+  font-size: 2.5em;
+  margin: 0;
+  position: absolute;
+  transition: transform 0.5s ease-out;
+  opacity: .2;
+  width: 40%;
+}
+
+.project-video {
+  width: 90%;
+  border: 1px solid rgb(157, 157, 157);
+  position: relative;
+  z-index: 2;
+}
+
+.project-description {
+  width: 85%;
+  font-size: 0.5em;
+}
+
+.project-links .card-button {
+  border: none;
+  background-color: transparent;
+  font-size: .7em;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.project-links .card-button:hover {
+  opacity: 0.2;
+}
+
+.project-description-group,
+.sub-description-group {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.sub-description-group {
+  font-size: 0.3em;
+}
+
+@media (min-width: 1000px) {
+  .project {
+    width: 55%;
+    margin-top: 70px;
+  }
+
+  .project:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .project-header {
+    font-size: 5em;
+  }
+
+  .project-description {
+    width: 70%;
+    font-size: 0.85em;
+  }
+
+  .project-links .card-button {
+    font-size: 1em;
+  }
+
+  .sub-description-group {
+    font-size: 0.7em;
+  }
 }

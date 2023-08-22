@@ -5,9 +5,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gerstner-Light';
+  src: url("./src/Gerstner-font/Gerstner-Programm-Light.woff") format('woff');
+  font-weight: light;
+  font-style: normal;
+}
+
 html {
   font-family: 'Gerstner-Regular';
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  height: 100%;
+  overflow-x: hidden;
 }

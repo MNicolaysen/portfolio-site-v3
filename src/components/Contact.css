@@ -1,0 +1,102 @@
+/* main contact display  */
+.contact {
+  position: absolute;
+  top: -5px;
+  left: 40px;
+  width: 95%;
+  height: 85%;
+  margin: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.875em;
+}
+
+.form-group {
+  align-items: flex-start;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 1.25em;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.625em;
+}
+
+/* contact to, cc, suject  */
+.email-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0.3125em;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+/* lines under email headers  */
+.email-header:not(:last-child) {
+  padding-bottom: 0.625em;
+  border-bottom: 1px solid #ccc;
+  width: 96%;
+}
+
+/* contact text area */
+textarea {
+  width: 95%;
+  height: 15.625em;
+  margin-left: 0.25em;
+  resize: vertical;
+  font-size: 0.7em;
+  border: none;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* send button */
+button[type='submit'] {
+  background-color: #F7F3E3;
+  border-style: none;
+  border-radius: 0.375em;
+  height: 2.8125em;
+  font-size: 1.3em;
+  color: black;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: -0.2em;
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .contact {
+    margin-top: 0;
+  }
+
+  /* contact to, cc, suject  */
+  .email-header {
+    font-size: 1em;
+    margin-left: 1.375em;
+  }
+
+  .form-group {
+    width: 70%;
+    height: 34.375em;
+    padding: 0;
+  }
+
+  /* contact text area */
+  textarea {
+    width: 93%;
+    height: 20.625em;
+    font-size: 1em;
+    padding: 0.9375em;
+    margin-left: 1.125em;
+  }
+
+  /* send button */
+  button[type='submit'] {
+    font-size: 1.5em;
+    right: 0.9375em;
+  }
+}
