@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Gerstner-Regular';
-  src: url("./src/assets/fonts/Gerstner-font/Gerstner-Programm-Regular.woff") format('woff');
+  src: url("./public/assets/fonts/Gerstner-font/Gerstner-Programm-Regular.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gerstner-Light';
-  src: url("./src/assets/fonts/Gerstner-font/Gerstner-Programm-Light.woff") format('woff');
+  src: url("./public/assets/fonts/Gerstner-font/Gerstner-Programm-Light.woff") format('woff');
   font-weight: light;
   font-style: normal;
 }

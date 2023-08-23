@@ -7,7 +7,7 @@ export const projectsData = [
     linkOne:'https://morton-nicolaysen.com/',
     linkTwo:'https://github.com/MNicolaysen/portfolio-site-v2',
     linkThree:'',
-    videoSrc:'./src/components/images/projects/portfolio-v2-vid.mp4'
+    videoSrc:'./public/images/projects/portfolio-v2-vid.mp4'
   },
   {
     title:'Meme Generator',
@@ -17,17 +17,17 @@ export const projectsData = [
     linkOne:'https://sparkly-alpaca-2bb10d.netlify.app',
     linkTwo:'',
     linkThree:'',
-    videoSrc:'./src/components/images/projects/meme-generator-vid.mp4',
+    videoSrc:'./public/images/projects/meme-generator-vid.mp4',
   },
   {
     title:"Travel Journal",
     tools:"React • JavaScript • CSS",
     dateCreated:'May 2023',
-    description:"I created a travel journal web app to practice using React props. It allowed me to dynamically display content and customize the app based on my experiences during a trip to Malaysia and Indonesia. Props helped me pass data between components, promoting reusability and efficient code organization. This project highlighted the value of props in React development.",
+    description:"I created a travel journal web app to practice using React props. It allowed me to dynamically display content and customize the app based on my experiences during a trip to Malaysia and Indonesia. Props helped me pass data between, promoting reusability and efficient code organization. This project highlighted the value of props in React development.",
     linkOne:"https://verdant-tapioca-d5a576.netlify.app",
     linkTwo:'https://github.com/MNicolaysen/scrimba-travel-journal',
     linkThree:'',
-    videoSrc:'./src/components/images/projects/travel-journal-vid.mp4',
+    videoSrc:'./public/images/projects/travel-journal-vid.mp4',
   },
   {
     title:"Password Generator",
@@ -37,7 +37,7 @@ export const projectsData = [
     linkOne:"https://gilded-tapioca-d75ef6.netlify.app",
     linkTwo:'https://github.com/MNicolaysen/password-generator',
     linkThree:'',
-    videoSrc:'./src/components/images/projects/password-generator-vid.mp4',
+    videoSrc:'./public/images/projects/password-generator-vid.mp4',
   },
   {
     title:"Restaurant App",
@@ -47,7 +47,7 @@ export const projectsData = [
     linkOne:"https://monumental-platypus-9e161c.netlify.app",
     linkTwo:'https://github.com/MNicolaysen/mobile-restaurant-menu',
     linkThree:'',
-    videoSrc:'./src/components/images/projects/restaurant-vid.mp4',
+    videoSrc:'./public/images/projects/restaurant-vid.mp4',
   },
   {
     title:"Unit Converter",
@@ -57,7 +57,7 @@ export const projectsData = [
     linkOne:"https://lovely-speculoos-f313a9.netlify.app",
     linkTwo:'https://github.com/MNicolaysen/scrimba-unit-converter',
     linkThree:'',
-    videoSrc:'./src/components/images/projects/unit-converter-vid.mp4',
+    videoSrc:'./public/images/projects/unit-converter-vid.mp4',
   },
   {
     title:"PlantSwap",
@@ -67,6 +67,6 @@ export const projectsData = [
     linkOne:"",
     linkTwo:'https://github.com/MNicolaysen/plant-swap',
     linkThree:'https://www.youtube.com/watch?v=yB-CzDoPWR0',
-    videoSrc:'./src/components/images/projects/le-wagon-demo-day.mp4',
+    videoSrc:'./public/images/projects/le-wagon-demo-day.mp4',
   }
 ];
