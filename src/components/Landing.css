@@ -1,8 +1,5 @@
 .landing-container {
-  height: 100%;
-  position: sticky;
-  top: 55px;
-  right: -600px;
+  height: 100vh;
 }
 
 .main-header {
@@ -12,6 +9,9 @@
   margin-right: .5em;
   font-family: 'Gerstner-Light', 'PT Sans';
   font-weight: light;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .nav-tabs {
@@ -25,6 +25,8 @@
   margin-left: .5em;
   cursor: pointer;
   position: relative;
+  position: fixed;
+  bottom: 0;
 }
 
 .projects-dropdown {
