@@ -27,6 +27,11 @@ function Landing() {
 
   return (
     <div className="landing-container">
+      <img
+        className='landing-logo'
+        style={{ opacity: activeSection !== '' ? 0.2 : opacity, transition }}
+        src="/images/projects/bica.png"
+        alt="logo" />
       <div className="main-header" style={{ opacity: activeSection !== '' ? 0.2 : opacity, transition }}>
         <h1>MORTON</h1>
         <h1>NICOLAYSEN</h1>
