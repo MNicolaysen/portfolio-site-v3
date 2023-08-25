@@ -4,6 +4,10 @@
   margin-top: 20px;
 }
 
+.project-item {
+  height: 100vh;
+}
+
 .project:not(:last-child) {
   margin-bottom: 20px;
 }

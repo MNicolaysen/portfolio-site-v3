@@ -1,14 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { projectsData } from './projectsData';
 import About from './About';
 import Contact from './Contact';
 import Connect from './Connect';
+import { ProjectContext } from './ProjectContext';
 import "./Landing.css";
 
 function Landing() {
   const [activeSection, setActiveSection] = useState('');
   const [opacity, setOpacity] = useState(1);
   const [transition, setTransition] = useState('');
+  const { activeProject } = useContext(ProjectContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +35,12 @@ function Landing() {
         {sections.map(section => (
           <li
             key={section}
-            onClick={() => setActiveSection(activeSection === section ? '' : section)}
+            onClick={() => {
+                setActiveSection(activeSection === section ? '' : section);
+                if (['about', 'contact', 'connect'].includes(section)) {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });  // Scroll smoothly to the top
+                }
+            }}
             style={{ opacity: activeSection && activeSection !== section ? 0.2 : 1, transition }}
           >
             {section.toUpperCase()}
@@ -41,7 +48,25 @@ function Landing() {
               <ul className={`projects-dropdown ${activeSection === 'experiments' ? 'visible' : ''}`}>
                 {projectsData.map((project, index) => (
                   <li key={index}>
-                    <a style={{textDecoration:'none', color:'inherit'}} href={`#${project.title.replace(/ /g, "-")}`}>{project.title}</a>
+                    <a
+                      style={{
+                          textDecoration: 'none',
+                          color: 'inherit',
+                          opacity: project.title === activeProject ? 1 : 0.2,
+                      }}
+                      onClick={(e) => {
+                          e.preventDefault();
+                          const targetElement = document.getElementById(`${project.title.replace(/ /g, "-")}`);
+                          if (targetElement) {
+                              targetElement.scrollIntoView({
+                                  behavior: "smooth",
+                                  block: "start"
+                              });
+                          }
+                      }}
+                  >
+                      {project.title}
+                  </a>
                   </li>
                 ))}
               </ul>

@@ -3,7 +3,7 @@ import './Contact.css'
 
 function Contact() {
   const [message, setMessage] = useState('');
-  const defaultSubject = 'RE: Portfolio Site Contact Me';
+  const defaultSubject = 'RE: Portfolio site - Contact';
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ function Contact() {
         <div className="form-group">
           <h4 className="email-header">To: morton.nicolaysen@gmail.com</h4>
           <h4 className="email-header">Cc: N/A</h4>
-          <h4 className="email-header">Subject: RE: Portfolio Site Contact Me</h4>
+          <h4 className="email-header">Subject: RE: Portfolio site - Contact</h4>
           <h4></h4>
             <div className='contact-elements'>
               <textarea

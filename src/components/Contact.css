@@ -1,7 +1,7 @@
 /* main contact display  */
 .contact {
   position: absolute;
-  top: -5px;
+  top: 60px;
   left: 40px;
   width: 95%;
   height: 85%;
@@ -29,14 +29,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 0.3125em;
+  margin: 1em 0 0 0.3125em;
   font-size: 0.8em;
   font-weight: lighter;
 }
 
 /* lines under email headers  */
 .email-header:not(:last-child) {
-  padding-bottom: 0.625em;
+  padding-bottom: 1em;
   border-bottom: 1px solid #ccc;
   width: 96%;
 }

@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useContext } from 'react';
 import { projectsData } from "./projectsData";
+import { ProjectContext } from './ProjectContext';
 import "./Project.css"
 
 function ProjectItem({
@@ -11,19 +12,20 @@ function ProjectItem({
   linkTwo,
   linkThree,
   videoSrc,
+  setActiveProject,
 }) {
 
   const [intersectionRatio, setIntersectionRatio] = useState(0);
   const projectRef = useRef(null);
   const videoRef = useRef(null);
 
-  // project title effect
   useEffect(() => {
     const observer = new IntersectionObserver(
       entries => {
         const entry = entries[0];
-        if (entry.isIntersecting) {
-          setIntersectionRatio(entry.intersectionRatio);
+        setIntersectionRatio(entry.intersectionRatio);
+        if (entry.intersectionRatio > 0.5) {
+          setActiveProject(title);
         }
       },
       {
@@ -42,7 +44,7 @@ function ProjectItem({
         observer.unobserve(projectRef.current);
       }
     };
-  }, []);
+  }, [title, setActiveProject]);
 
   const transformStyle = `translateX(${100 - (intersectionRatio * 200)}%)`;
 
@@ -101,10 +103,12 @@ function ProjectItem({
 }
 
 function Projects() {
+  const { setActiveProject } = useContext(ProjectContext);
+
   return (
     <div className="project-item">
       {projectsData.map((project, index) => (
-        <ProjectItem key={index} {...project} />
+        <ProjectItem key={index} {...project} setActiveProject={setActiveProject} />
       ))}
     </div>
   );

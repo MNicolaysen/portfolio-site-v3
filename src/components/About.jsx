@@ -5,48 +5,42 @@ function About() {
     <div className='about-container'>
       <div className='sheet'>
         <p className='sheet-text'>
-          Hey, I'm Morton, a 28 year old aspiring web developer originally from a small village called Llangrannog in West Wales.
-          Over a year ago, I made the exciting move to London to pursue a career in web development.
-          Let me share a bit about my journey.
+          Hey, I'm Morton, a 28 year old from a small village called Llangrannog in West Wales.
+          In Febuary 2022, I made the exciting move to London to pursue a career in the tech industry.
+          Let me share a bit about my journey of how I got to where I am today.
         </p>
 
         <p className='sheet-text'>
-          In my younger years, I had a genuine love for technology.
-          I was always fascinated by the latest gadgets and computer features.
-          However, as time went on, I lost touch with that passion.
-          Growing up in Llangrannog, a quaint coastal village heavily reliant on tourism,
-          there were no tech-based opportunities available.
-          To make a living, I took on various jobs, from working behind the bar in the local pubs
-          to valeting in a restaurant car park and my favourite, lifeguarding on the beautiful beaches of Ceredigion.
-          These seasonal roles allowed me to indulge in my love for travel, particularly to surf destinations like New Zealand,
-          Portugal, Bali, the Canary Islands, and France.
+        From an early age, I’ve been captivated by the potential of technology. At the age of 14, I taught myself to jailbreak my iPhone,
+        curious in how I could push the boundless possibilities of tech beyond its widely accepted limitations.
+        This inquiring nature has anchored all of my future endeavours, even in my later years, as my financial needs
+        demanded a quick pivot into the limited job opportunities in my small village of west Wales, predominantly centred
+        around seasonal tourism and customer service. But what I gained from them was invaluable: An ability to adapt swiftly
+        to various environments, instilling in me a keen aptitude for rapidly acquiring new skills and knowledge. Even in these
+        capacities, whether it has been introducing online resources into training processes as a Lifeguard, or establishing
+        new workflows and system as a valet, I have proactively sought innovative approaches to problem-solving at every job
+        I occupied. The flexible and varied nature of these roles afforded me the liberty to indulge in my passion for travel.
+        Throughout my early 20s, I had the privilege of exploring numerous countries, immersing myself in diverse cultures,
+        sampling amazing cuisines, and surfing some of the world's most renowned waves.
         </p>
 
         <p className='sheet-text'>
-          During the lockdown, I had the privilege of living with a close friend who happened to be a web developer.
-          It was during this time that my eyes were reopened to the world of technology.
-          My friend guided me in exploring coding for myself, and I was instantly captivated.
-          The process of turning lines of code, which initially seemed like gibberish to me,
-          into tangible web elements like headers, forms, and images was incredibly satisfying.
+        During the lockdown, I had the privilege of living with a close friend who happened to be a web developer. It was during
+        this time that my eyes were reopened to the world of technology. My friend guided me in exploring coding for myself, and
+        I was instantly captivated. The process of turning abstract lines of code, which initially seemed like gibberish to me,
+        into tangible web elements was incredibly satisfying.
+        As the lockdown restrictions eased, I made the decision to pursue this desire further. I uprooted my entire life:
+        I moved to London, and enrolled in a web development bootcamp at Le Wagon, where I acquired a comprehensive understanding
+        of web development, which included proficiency in various programming languages, frameworks, and tools. I also learned
+        valuable collaborative skills, honed through teamwork and Git usage. I further solidified knowledge with another course
+         with Scrimba, In which I honed in on frontend web development, gaining skills in React.js. Now, with a robust foundation
+          in web development I am confident in, I crave a professional environment that can marry my rich technical skillset and my
+           hunger to apply it.
         </p>
 
         <p className='sheet-text'>
-          As the lockdown restrictions eased, I made the decision to pursue web development as a career.
-          The first step was to leave Llangrannog and seek opportunities in a place that offered a thriving tech scene.
-          Before I knew it, I was packing up my car and embarking on a new chapter in London.
-          I wasted no time upon my arrival, I enrolled in Le Wagon's full-stack web developer bootcamp,
-          which provided me with an exceptional introduction to the world of web development.
-          By the end of the bootcamp, I had a solid understanding of how it all works.
+          Check out my portfolio to see some of the projects I've been working on!
         </p>
-
-        <p className='sheet-text'>
-          However, I wanted to further refine my skills before diving into a web developer role.
-          I took the time to settle into London, embrace the city, and explore everything it had to offer.
-          Additionally, I enrolled in an online course with Scrimba, which allows me to learn at my own pace.
-          Currently, my focus is on mastering React.js.
-        </p>
-
-        <p className='sheet-text'>Check out my portfolio to see some of the projects I've been working on!</p>
       </div>
     </div>
   )
