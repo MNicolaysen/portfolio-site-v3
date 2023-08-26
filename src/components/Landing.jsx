@@ -8,14 +8,10 @@ import "./Landing.css";
 
 function Landing() {
   const [activeSection, setActiveSection] = useState('');
-  const [opacity, setOpacity] = useState(1);
-  const [transition, setTransition] = useState('');
   const { activeProject } = useContext(ProjectContext);
 
   useEffect(() => {
     const handleScroll = () => {
-      setOpacity(window.scrollY > 30 ? 0.2 : 1);
-      setTransition(window.scrollY > 30 ? '0.9s' : '');
       setActiveSection(window.scrollY > 150 ? 'experiments' : '');
     };
 
@@ -25,14 +21,27 @@ function Landing() {
 
   const sections = ['experiments', 'about', 'contact', 'connect'];
 
+  const handleClick = section => {
+    setActiveSection(prevSection => prevSection === section ? '' : section);
+    if (['about', 'contact', 'connect'].includes(section)) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const style = {
+    opacity: activeSection !== '' ? 0.2 : 1,
+    transition: '0.9s'
+  };
+
   return (
     <div className="landing-container">
       <img
         className='landing-logo'
-        style={{ opacity: activeSection !== '' ? 0.2 : opacity, transition }}
+        style={style}
         src="/images/projects/bica.png"
-        alt="logo" />
-      <div className="main-header" style={{ opacity: activeSection !== '' ? 0.2 : opacity, transition }}>
+        alt="logo"
+      />
+      <div className="main-header" style={style}>
         <h1>MORTON</h1>
         <h1>NICOLAYSEN</h1>
       </div>
@@ -40,13 +49,8 @@ function Landing() {
         {sections.map(section => (
           <li
             key={section}
-            onClick={() => {
-                setActiveSection(activeSection === section ? '' : section);
-                if (['about', 'contact', 'connect'].includes(section)) {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });  // Scroll smoothly to the top
-                }
-            }}
-            style={{ opacity: activeSection && activeSection !== section ? 0.2 : 1, transition }}
+            onClick={() => handleClick(section)}
+            style={{ ...style, opacity: activeSection && activeSection !== section ? 0.2 : 1 }}
           >
             {section.toUpperCase()}
             {section === 'experiments' && (
@@ -55,23 +59,19 @@ function Landing() {
                   <li key={index}>
                     <a
                       style={{
-                          textDecoration: 'none',
-                          color: 'inherit',
-                          opacity: project.title === activeProject ? 1 : 0.2,
+                        textDecoration: 'none',
+                        color: 'inherit',
+                        opacity: project.title === activeProject ? 1 : 0.2,
                       }}
+                      href={`#${project.title.replace(/ /g, "-")}`}
                       onClick={(e) => {
-                          e.preventDefault();
-                          const targetElement = document.getElementById(`${project.title.replace(/ /g, "-")}`);
-                          if (targetElement) {
-                              targetElement.scrollIntoView({
-                                  behavior: "smooth",
-                                  block: "start"
-                              });
-                          }
+                        e.preventDefault();
+                        const targetElement = document.getElementById(`${project.title.replace(/ /g, "-")}`);
+                        targetElement && targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
                       }}
-                  >
+                    >
                       {project.title}
-                  </a>
+                    </a>
                   </li>
                 ))}
               </ul>
