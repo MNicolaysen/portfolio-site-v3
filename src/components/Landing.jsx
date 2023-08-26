@@ -7,12 +7,18 @@ import { ProjectContext } from './ProjectContext';
 import "./Landing.css";
 
 function Landing() {
+  const [activeMouse, setActiveMouse] = useState(true)
   const [activeSection, setActiveSection] = useState('');
   const { activeProject } = useContext(ProjectContext);
 
   useEffect(() => {
     const handleScroll = () => {
       setActiveSection(window.scrollY > 150 ? 'experiments' : '');
+      if (window.scrollY > 10) {
+        setActiveMouse(false);
+      } else {
+        setActiveMouse(true);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -45,6 +51,13 @@ function Landing() {
         <h1>MORTON</h1>
         <h1>NICOLAYSEN</h1>
       </div>
+      {/* mouse scrolling animation  */}
+      <div className="scroll-downs" style={{display: activeMouse ? 'block' : 'none'}}>
+        <div className="mousey">
+          <div className="scroller"></div>
+        </div>
+      </div>
+      {/* //  */}
       <ul className="nav-tabs">
         {sections.map(section => (
           <li
