@@ -7,8 +7,6 @@
   font-size: 1.5em;
   line-height: 35px;
   margin-right: .5em;
-  font-family: 'Gerstner-Light', 'PT Sans';
-  font-weight: light;
   position: fixed;
   top: 0;
   right: 0;
@@ -17,8 +15,8 @@
 .landing-logo {
   width: 20%;
   position: fixed;
-  top: 40%;
-  left: 38%;
+  top: 37%;
+  left: 40%;
 }
 
 .nav-tabs {
@@ -50,11 +48,12 @@
   }
 
   .main-header {
-    font-size: 2.7em;
+    font-size: 2em;
+    top: -20px;
   }
 
   .nav-tabs {
-    width: 35%;
+    width: 30%;
     font-size: 1.125em;
     justify-content: space-between;
     margin: 485px 0 .5em 1em;
