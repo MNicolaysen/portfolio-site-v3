@@ -10,8 +10,8 @@
 
 .sheet {
   font-size: .7em;
-  padding: 1em 2em;
-  line-height: 1em;
+  padding: 2em;
+  line-height: 1.3em;
 }
 
 @media (min-width: '1000px') {
