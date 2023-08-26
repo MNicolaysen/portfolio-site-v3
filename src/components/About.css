@@ -9,7 +9,15 @@
 }
 
 .sheet {
-  font-size: 1.1em;
-  padding: 3em 5em;
-  line-height: 1.5em;
+  font-size: .7em;
+  padding: 1em 2em;
+  line-height: 1em;
+}
+
+@media (min-width: '1000px') {
+  .sheet {
+    font-size: 1.1em;
+    padding: 3em 5em;
+    line-height: 1.5em;
+  }
 }
