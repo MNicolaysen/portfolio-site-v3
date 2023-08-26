@@ -57,11 +57,11 @@
     width: 35%;
     font-size: 1.125em;
     justify-content: space-between;
-    width: 300px;
-    margin-top: 485px 0 0 .5em;
+    margin: 485px 0 .5em 1em;
   }
 
   .projects-dropdown {
+    display: block;
     list-style-type: none;
     overflow: hidden;
     max-height: 0;

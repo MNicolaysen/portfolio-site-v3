@@ -10,7 +10,13 @@
 }
 
 .connect-links {
-  font-size: 4.5em;
+  font-size: 3.5em;
   list-style: none;
   text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .connect-links {
+    font-size: 4.5em;
+  }
 }
