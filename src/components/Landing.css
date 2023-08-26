@@ -22,14 +22,13 @@
 }
 
 .nav-tabs {
-  margin-top: 485px;
+  margin-top: 485px 0 0 0;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   list-style-type: none;
   font-size: .8em;
-  margin-left: .5em;
   cursor: pointer;
   position: relative;
   position: fixed;
@@ -59,6 +58,7 @@
     font-size: 1.125em;
     justify-content: space-between;
     width: 300px;
+    margin-top: 485px 0 0 .5em;
   }
 
   .projects-dropdown {
