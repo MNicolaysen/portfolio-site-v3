@@ -12,6 +12,7 @@ function ProjectItem({
   linkTwo,
   linkThree,
   videoSrc,
+  imageSrc,
   setActiveProject,
 }) {
 
@@ -72,6 +73,7 @@ function ProjectItem({
         className="project-video"
         ref={videoRef}
         src={videoSrc}
+        placeholder={imageSrc}
         autoPlay
         muted
         loop

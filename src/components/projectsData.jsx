@@ -7,7 +7,8 @@ export const projectsData = [
     linkOne:'https://morton-nicolaysen.com/',
     linkTwo:'https://github.com/MNicolaysen/portfolio-site-v2',
     linkThree:'',
-    videoSrc:'/images/projects/portfolio-v2-vid.mp4'
+    videoSrc:'/images/projects/portfolio-v2-vid.mp4',
+    imageSrc:'/images/projects/portfolio-site-v1'
   },
   {
     title:'Meme Generator',
@@ -18,6 +19,7 @@ export const projectsData = [
     linkTwo:'',
     linkThree:'',
     videoSrc:'/images/projects/meme-generator-vid.mp4',
+    imageSrc:'/images/projects/meme-generator'
   },
   {
     title:"Travel Journal",
@@ -28,6 +30,7 @@ export const projectsData = [
     linkTwo:'https://github.com/MNicolaysen/scrimba-travel-journal',
     linkThree:'',
     videoSrc:'/images/projects/travel-journal-vid.mp4',
+    imageSrc:'/images/projects/travel-journal'
   },
   {
     title:"Password Generator",
@@ -38,6 +41,7 @@ export const projectsData = [
     linkTwo:'https://github.com/MNicolaysen/password-generator',
     linkThree:'',
     videoSrc:'/images/projects/password-generator-vid.mp4',
+    imageSrc:'/images/projects/password-generator'
   },
   {
     title:"Restaurant App",
@@ -48,6 +52,7 @@ export const projectsData = [
     linkTwo:'https://github.com/MNicolaysen/mobile-restaurant-menu',
     linkThree:'',
     videoSrc:'/images/projects/restaurant-vid.mp4',
+    imageSrc:'/images/projects/restaurant'
   },
   {
     title:"Unit Converter",
@@ -58,6 +63,7 @@ export const projectsData = [
     linkTwo:'https://github.com/MNicolaysen/scrimba-unit-converter',
     linkThree:'',
     videoSrc:'/images/projects/unit-converter-vid.mp4',
+    imageSrc:'/images/projects/unit-converter'
   },
   {
     title:"PlantSwap",
@@ -68,5 +74,6 @@ export const projectsData = [
     linkTwo:'https://github.com/MNicolaysen/plant-swap',
     linkThree:'https://www.youtube.com/watch?v=yB-CzDoPWR0',
     videoSrc:'/images/projects/le-wagon-demo-day.mp4',
+    imageSrc:'/images/projects/plant-swap'
   }
 ];
