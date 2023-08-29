@@ -4,7 +4,7 @@ export const projectsData = [
     tools:'React • JavaScript • CSS',
     dateCreated:'June 2023',
     description:"This is an earlier version of my portfolio site. It was unlike projects I'd undertaken within the confines of a course, it empowered me to envision and construct a website according to my personal aesthetic. Although I devoted a substantial amount of time into this project, my design-as-I-went approach proved to be less efficient. This realisation led me to adopt Figma for the design phase of my current portfolio. Nevertheless, creating version one of my portfolio was very beneficial for my growth. It not only allowed me to apply principles I had learned previously but also introduced me to a broader range of React principles to harness in my projects.",
-    linkOne:'https://morton-nicolaysen.com/',
+    linkOne:'https://resilient-gingersnap-8c2a52.netlify.app/',
     linkTwo:'https://github.com/MNicolaysen/portfolio-site-v2',
     linkThree:'',
     videoSrc:'/images/projects/portfolio-v2-vid.mp4',
