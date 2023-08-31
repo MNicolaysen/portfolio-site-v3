@@ -69,17 +69,18 @@ function ProjectItem({
   return (
     <div className="project" ref={projectRef} id={title.replace(/ /g, "-")}>
       <h3 className="project-header" style={{ transform: transformStyle }}>{title}</h3>
-      <video
-        className="project-video"
-        ref={videoRef}
-        src={videoSrc}
-        placeholder={imageSrc}
-        autoPlay
-        muted
-        loop
-        playsInline
-        type="video/mp4"
-      ></video>
+        <video
+          className="project-video"
+          ref={videoRef}
+          src={videoSrc}
+          placeholder={imageSrc}
+          autoPlay
+          muted
+          loop
+          playsInline
+          type="video/mp4"
+          onClick={() => handleButtonClick(linkOne)}
+        ></video>
       <div className='project-description-group'>
         <p className="project-description">{description}</p>
         <ul className="project-links">

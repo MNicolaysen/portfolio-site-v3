@@ -31,6 +31,7 @@
   border: 1px solid rgb(157, 157, 157);
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
 .project-description {
@@ -65,7 +66,7 @@
 
 @media (min-width: 1000px) {
   .project {
-    width: 55%;
+    width: 50%;
     margin-top: 70px;
   }
 
@@ -74,13 +75,13 @@
   }
 
   .project-header {
-    font-size: 4.5em;
+    font-size: 4.2em;
     transition: transform 0.5s ease-out;
   }
 
   .project-description {
     width: 80%;
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.5em;
   }
 
@@ -89,6 +90,6 @@
   }
 
   .sub-description-group {
-    font-size: 0.75em;
+    font-size: 0.7em;
   }
 }
