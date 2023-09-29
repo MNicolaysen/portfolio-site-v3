@@ -70,7 +70,7 @@ export const projectsData = [
     tools:"Ruby on Rails • CSS • Bootstrap • API",
     dateCreated:'June 2022',
     description:"For our final project at Le Wagon, my team and I created a plant swapping and donation platform. It featured a live chat for easy communication and utilized map APIs for convenient local connections. We focused on creating an intuitive user interface and tackled challenges like user authentication and database optimization. The project showcased our ability to combine plant enthusiasm with modern technology for a meaningful and engaging platform.",
-    linkOne:"",
+    linkOne:"https://plant--swap.fly.dev/",
     linkTwo:'https://github.com/MNicolaysen/plant-swap',
     linkThree:'https://www.youtube.com/watch?v=yB-CzDoPWR0',
     videoSrc:'/images/projects/le-wagon-demo-day.mp4',
