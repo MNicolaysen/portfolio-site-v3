@@ -34,13 +34,15 @@
 }
 
 .project-description {
-  width: 90%;
   font-size: 0.5em;
 }
 
 .project-links .card-button {
-  border: none;
-  background-color: transparent;
+  margin-right: 10px;
+  align-items: center;
+  border: solid 1px black;
+  width: 130px;
+  height: 30px;
   font-size: .7em;
   cursor: pointer;
   text-decoration: none;
@@ -51,16 +53,15 @@
   opacity: 0.2;
 }
 
-.project-description-group,
-.sub-description-group {
-  width: 90%;
+.project-info-lower {
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
-
 
 .sub-description-group {
   font-size: 0.3em;
+  line-height: 10px;
 }
 
 @media (min-width: 1000px) {
@@ -79,7 +80,7 @@
   }
 
   .project-description {
-    width: 80%;
+    width: 85%;
     font-size: .9em;
     line-height: 1.5em;
   }

@@ -8,6 +8,7 @@ function ProjectItem({
   tools,
   dateCreated,
   description,
+  link,
   linkOne,
   linkTwo,
   linkThree,
@@ -61,7 +62,7 @@ function ProjectItem({
 
   const links = [linkOne, linkTwo, linkThree];
   const icons = [
-    "fa-solid fa-arrow-up-right-from-square",
+    "fa-brands fa-figma",
     "fa-brands fa-github",
     "fa-brands fa-youtube"
   ];
@@ -79,11 +80,11 @@ function ProjectItem({
           loop
           playsInline
           type="video/mp4"
-          onClick={() => handleButtonClick(linkOne)}
+          onClick={() => handleButtonClick(link)}
         ></video>
-      <div className='project-description-group'>
         <p className="project-description">{description}</p>
-        <ul className="project-links">
+        <div className='project-info-lower'>
+          <ul className="project-links" style={{paddingLeft:'0px'}}>
             {links.map((link, idx) => (
               link && (
                 <button
@@ -91,16 +92,18 @@ function ProjectItem({
                   className={"card-button"}
                   onClick={() => handleButtonClick(link)}
                 >
-                  <i className={icons[idx]}></i>
+                  Open in
+                  <i className={icons[idx]} style={{marginLeft:'10px'}}></i>
                 </button>
               )
             ))}
-        </ul>
-      </div>
-      <div className='sub-description-group'>
-        <h3>{dateCreated}</h3>
-        <h3>{tools}</h3>
-      </div>
+          </ul>
+          <div className='sub-description-group'>
+            <h3>{dateCreated}</h3>
+            <h3>{tools}</h3>
+          </div>
+        </div>
+
     </div>
   );
 }

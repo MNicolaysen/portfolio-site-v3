@@ -72,6 +72,18 @@
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
+
+.landing-figma-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 30px 20px 0;
+  width: 130px;
+  height: 30px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
 @keyframes scroll {
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }

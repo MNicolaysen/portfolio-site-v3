@@ -39,6 +39,10 @@ function Landing() {
     transition: '0.9s'
   };
 
+  const handleFigmaClick = () => {
+    window.open('https://www.figma.com/file/OCDLEl26XL7y17NfZ1cecS/portfolio-v3?type=design&node-id=103%3A1835&mode=design&t=1qpFqmH3nUoa2S0o-1', "_blank");
+  }
+
   return (
     <div className="landing-container">
       <img
@@ -51,6 +55,13 @@ function Landing() {
         <h1>MORTON</h1>
         <h1>NICOLAYSEN</h1>
       </div>
+      <button
+        className='landing-figma-btn'
+        onClick={() => handleFigmaClick()}
+        style={{display: activeMouse ? 'block' : 'none'}}
+      >
+        Open in <i className="fa-brands fa-figma"></i>
+      </button>
       {/* mouse scrolling animation  */}
       <div className="scroll-downs" style={{display: activeMouse ? 'block' : 'none'}}>
         <div className="mousey">
