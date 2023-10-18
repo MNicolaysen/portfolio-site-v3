@@ -68,7 +68,7 @@ function Landing() {
               fontSize: window.innerWidth > 900 ? '' : '2em',
               color: 'black',
               textDecoration: 'none',
-              marginLeft: window.innerWidth > 900 ? '8px' : ''
+              marginLeft: window.innerWidth > 900 ? '8px' : '',
             }
           }>
         </i>
