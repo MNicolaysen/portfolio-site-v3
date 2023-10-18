@@ -106,7 +106,8 @@
   }
 
   .sub-description-group {
-    width: 22%;
+    font-size: .7em;
+    margin-top: 0;
   }
 
   .project:last-child {
