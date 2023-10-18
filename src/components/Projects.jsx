@@ -99,6 +99,7 @@ function ProjectItem({
                       {
                         {
                           marginLeft: window.innerWidth > 1200 ? '8px' : '0',
+                          textAlign: 'center',
                         }
                       }
                   ></i>
