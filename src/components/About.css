@@ -1,19 +1,19 @@
 .about-container {
   position: absolute;
-  top: 20px;
+  top: 30px;
   width: 95%;
-  height: 100%;
+  height: 86%;
   margin: 0;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.8);
   overflow-y: scroll;
+  border: solid 1px black;
 }
 
 .sheet {
-  font-size: .9em;
-  padding: .8em;
+  font-size: 1.2em;
+  padding: 0 .8em 0;
   line-height: 1.3em;
-  border: solid 1px black;
 }
 
 @media (min-width: 1000px) {
