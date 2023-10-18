@@ -55,15 +55,33 @@ function Landing() {
         <h1>MORTON</h1>
         <h1>NICOLAYSEN</h1>
       </div>
-      <button
+      {< button
         className='landing-figma-btn'
         onClick={() => handleFigmaClick()}
         style={{display: activeMouse ? 'block' : 'none'}}
       >
-        Open in <i className="fa-brands fa-figma"></i>
-      </button>
+        {window.innerWidth > 900 ? 'Open in' : ''}
+        <i
+          className="fa-brands fa-figma"
+          style={
+            {
+              fontSize: window.innerWidth > 900 ? '' : '2em',
+              color: 'black',
+              textDecoration: 'none',
+              marginLeft: window.innerWidth > 900 ? '8px' : ''
+            }
+          }>
+        </i>
+      </button> }
       {/* mouse scrolling animation  */}
-      <div className="scroll-downs" style={{display: activeMouse ? 'block' : 'none'}}>
+      <div
+        className="scroll-downs"
+        style={
+          {
+            display: activeMouse && window.innerWidth > 900 ? 'block' : 'none',
+          }
+        }
+      >
         <div className="mousey">
           <div className="scroller"></div>
         </div>
@@ -74,11 +92,11 @@ function Landing() {
           <li
             key={section}
             onClick={() => handleClick(section)}
-            style={{ ...style, opacity: activeSection && activeSection !== section ? 0.2 : 1 }}
+            style={{ ...style, opacity: window.innerWidth > 900 ? activeSection && activeSection !== section ? 0.2 : 1 : '' }}
           >
             {section.toUpperCase()}
             {section === 'experiments' && (
-              <ul className={`projects-dropdown ${activeSection === 'experiments' ? 'visible' : ''}`}>
+              <ul className={`projects-dropdown ${activeSection === 'experiments' && window.innerWidth > 900 ? 'visible' : ''}`}>
                 {projectsData.map((project, index) => (
                   <li key={index}>
                     <a

@@ -8,6 +8,10 @@
   height: 100vh;
 }
 
+.project:last-child {
+  padding-bottom: 90px;
+}
+
 .project:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -21,32 +25,31 @@
 .project-header {
   font-size: 2.5em;
   margin: 0;
-  position: absolute;
-  width: 40%;
 }
 
 .project-video {
-  width: 90%;
   border: 1px solid rgb(157, 157, 157);
   position: relative;
   z-index: 2;
   cursor: pointer;
+  width: 100%;
 }
 
 .project-description {
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 
 .project-links .card-button {
   margin-right: 10px;
   align-items: center;
   border: solid 1px black;
-  width: 130px;
-  height: 30px;
-  font-size: .7em;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
   cursor: pointer;
   text-decoration: none;
   color: black;
+  border-radius: 6px;
 }
 
 .project-links .card-button:hover {
@@ -56,12 +59,12 @@
 .project-info-lower {
   display: flex;
   justify-content: space-between;
-  width: 90%;
 }
 
 .sub-description-group {
-  font-size: 0.3em;
+  font-size: 0.7em;
   line-height: 10px;
+  width: 40%;
 }
 
 @media (min-width: 1000px) {
@@ -75,8 +78,14 @@
   }
 
   .project-header {
+    position: absolute;
     font-size: 4.2em;
+    width: 40%;
     transition: transform 0.5s ease-out;
+  }
+
+  .project-video {
+    width: 90%;
   }
 
   .project-description {
@@ -87,9 +96,20 @@
 
   .project-links .card-button {
     font-size: 1em;
+    width: 130px;
+    height: 30px;
+    border-radius: 0;
+  }
+
+  .project-info-lower {
+    width: 90%;
   }
 
   .sub-description-group {
-    font-size: 0.7em;
+    width: 22%;
+  }
+
+  .project:last-child {
+    padding-bottom: 0;
   }
 }

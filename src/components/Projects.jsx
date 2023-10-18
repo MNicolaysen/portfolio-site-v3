@@ -69,7 +69,7 @@ function ProjectItem({
 
   return (
     <div className="project" ref={projectRef} id={title.replace(/ /g, "-")}>
-      <h3 className="project-header" style={{ transform: transformStyle }}>{title}</h3>
+      <h3 className="project-header" style={{transform: window.innerWidth > 900 ? transformStyle : ''}}>{title}</h3>
         <video
           className="project-video"
           ref={videoRef}
@@ -92,8 +92,8 @@ function ProjectItem({
                   className={"card-button"}
                   onClick={() => handleButtonClick(link)}
                 >
-                  Open in
-                  <i className={icons[idx]} style={{marginLeft:'10px'}}></i>
+                  {window.innerWidth > 900 ? 'Open in' : ''}
+                  <i className={icons[idx]} style={{marginLeft: window.innerWidth > 900 ? '8px' : ''}}></i>
                 </button>
               )
             ))}

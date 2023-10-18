@@ -1,6 +1,6 @@
 .connect-container {
-  width: 97%;
-  height: 95%;
+  width: 90%;
+  height: 100%;
   margin: 0;
   z-index: 10;
   display: flex;
@@ -16,6 +16,11 @@
 }
 
 @media (min-width: 1000px) {
+  .connect-container {
+    height: 95%;
+    width: 97%;
+  }
+
   .connect-links {
     font-size: 5em;
   }
