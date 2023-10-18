@@ -98,8 +98,7 @@ function ProjectItem({
                     style=
                       {
                         {
-                          marginLeft: window.innerWidth > 900 ? '8px' : '0',
-                          marginRight: window.innerWidth > 900 ? '0' : '5px',
+                          marginLeft: window.innerWidth > 1200 ? '8px' : '0',
                         }
                       }
                   ></i>
