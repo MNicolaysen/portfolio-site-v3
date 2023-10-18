@@ -64,7 +64,7 @@
 .sub-description-group {
   font-size: 0.4em;
   line-height: 10px;
-  width: 10%;
+  /* width: 10%; */
 }
 
 @media (min-width: 1000px) {
