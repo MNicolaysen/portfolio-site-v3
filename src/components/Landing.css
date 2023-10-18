@@ -33,9 +33,6 @@
   position: relative;
   position: fixed;
   bottom: -25px;
-  border-top: solid 1px black;
-  z-index: 20;
-  background-color: white;
 }
 
 .projects-dropdown {
@@ -113,11 +110,9 @@
     font-size: 1.125em;
     justify-content: space-between;
     margin: 0 0 .7em 1em;
-    background-color: none;
     height: 4%;
     bottom: 0;
     padding: 0;
-    border-top: none;
   }
 
   .projects-dropdown {

@@ -92,7 +92,14 @@ function Landing() {
           <li
             key={section}
             onClick={() => handleClick(section)}
-            style={{ ...style, opacity: window.innerWidth > 900 ? activeSection && activeSection !== section ? 0.2 : 1 : '' }}
+            style=
+              {
+                {
+                  ...style,
+                  opacity: window.innerWidth > 900 ? activeSection && activeSection !== section ? 0.2 : 1 : '',
+                  display: window.innerWidth > 900 ? 'block' : activeMouse ? 'block' : 'none'
+                }
+              }
           >
             {section.toUpperCase()}
             {section === 'experiments' && (
