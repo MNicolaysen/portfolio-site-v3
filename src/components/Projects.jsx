@@ -93,7 +93,7 @@ function ProjectItem({
                   onClick={() => handleButtonClick(link)}
                 >
                   {window.innerWidth > 900 ? 'Open in' : ''}
-                  <i className={icons[idx]} style={{marginLeft: window.innerWidth > 900 ? '8px' : ''}}></i>
+                  <i className={icons[idx]} style={{marginLeft: window.innerWidth > 900 ? '8px' : '0'}}></i>
                 </button>
               )
             ))}
