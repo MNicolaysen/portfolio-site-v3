@@ -1,6 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
 import { projectsData } from './projectsData';
-import About from './About';
 import Contact from './Contact';
 import Connect from './Connect';
 import { ProjectContext } from './ProjectContext';
@@ -25,11 +24,11 @@ function Landing() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const sections = ['experiments', 'about', 'contact', 'connect'];
+  const sections = ['experiments', 'contact', 'connect'];
 
   const handleClick = section => {
     setActiveSection(prevSection => prevSection === section ? '' : section);
-    if (['about', 'contact', 'connect'].includes(section)) {
+    if (['contact', 'connect'].includes(section)) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -129,7 +128,6 @@ function Landing() {
         ))}
       </ul>
 
-      {activeSection === 'about' && <About />}
       {activeSection === 'contact' && <Contact />}
       {activeSection === 'connect' && <Connect />}
     </div>
